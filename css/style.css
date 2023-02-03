@@ -1155,10 +1155,11 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 0.9375rem;
 }
 
-.collection-homepage__column > img {
-  margin-bottom: 0.9375rem;
+.collection-homepage__row img {
+  border-radius: 1.25rem;
 }
 
 .gallery__row {
