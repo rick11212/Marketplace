@@ -2967,6 +2967,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 26.5625rem;
   }
 
+  .digest-homepage__button {
+    width: 26.5625rem;
+  }
+
   .tabs-page-artist__title span {
     font-size: 1rem;
   }
@@ -3751,7 +3755,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .digest-homepage__input {
-    width: 20.3125rem;
+    width: 19.6875rem;
   }
 
   .digest-homepage__button {
@@ -3760,6 +3764,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .digest-homepage__button {
     padding-left: 1.5625rem;
+  }
+
+  .digest-homepage__button {
+    width: 19.6875rem;
   }
 
   .tabs-page-artist__title span {
@@ -6651,15 +6659,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (min-width: 52.125em) and (max-width: 65.625em) {
-@supports (width: clamp( 20.3125rem , -3.8194444444rem  +  46.2962962963vw , 26.5625rem )) {
+@supports (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
     .digest-homepage__input {
-      width: clamp( 20.3125rem , -3.8194444444rem  +  46.2962962963vw , 26.5625rem );
+      width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem );
     }
 }
 
-@supports not (width: clamp( 20.3125rem , -3.8194444444rem  +  46.2962962963vw , 26.5625rem )) {
+@supports not (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
     .digest-homepage__input {
-      width: calc(20.3125rem + 6.25 * (100vw - 52.125rem) / 13.5);
+      width: calc(19.6875rem + 6.875 * (100vw - 52.125rem) / 13.5);
+    }
+}
+
+@supports (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
+    .digest-homepage__button {
+      width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem );
+    }
+}
+
+@supports not (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
+    .digest-homepage__button {
+      width: calc(19.6875rem + 6.875 * (100vw - 52.125rem) / 13.5);
     }
 }
 
