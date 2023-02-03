@@ -1550,10 +1550,11 @@ body::after {
 .digest-homepage__button {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -0.125rem;
   color: #fff;
   padding: 0 3.125rem;
   border: 1px solid transparent;
+  width: 13.125rem;
 }
 
 .page-artist__main {
@@ -2963,14 +2964,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 26.5625rem;
   }
 
-  .digest-homepage__input {
-    width: 26.5625rem;
-  }
-
-  .digest-homepage__button {
-    width: 26.5625rem;
-  }
-
   .tabs-page-artist__title span {
     font-size: 1rem;
   }
@@ -3019,6 +3012,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .tabs-sign-up__text {
     font-size: 1.375rem;
+  }
+
+  .button_small {
+    padding-top: 1.1875rem;
+  }
+
+  .button_small {
+    padding-bottom: 1.1875rem;
+  }
+
+  .button_big {
+    padding-top: 1.1875rem;
+  }
+
+  .button_big {
+    padding-bottom: 1.1875rem;
   }
 
   .stats__title {
@@ -3502,27 +3511,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @media (min-width: 73.75em) {
   .button_small {
-    padding-top: 1.25rem;
-  }
-
-  .button_small {
-    padding-bottom: 1.25rem;
-  }
-
-  .button_small {
     padding-right: 1.875rem;
   }
 
   .button_small {
     padding-left: 1.875rem;
-  }
-
-  .button_big {
-    padding-top: 1.25rem;
-  }
-
-  .button_big {
-    padding-bottom: 1.25rem;
   }
 
   .button_big {
@@ -3663,27 +3656,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @media (max-width: 52.125em) {
   .button_small {
-    padding-top: 0.625rem;
-  }
-
-  .button_small {
-    padding-bottom: 0.625rem;
-  }
-
-  .button_small {
     padding-right: 0.9375rem;
   }
 
   .button_small {
     padding-left: 0.9375rem;
-  }
-
-  .button_big {
-    padding-top: 0.625rem;
-  }
-
-  .button_big {
-    padding-bottom: 0.625rem;
   }
 
   .button_big {
@@ -3754,20 +3731,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             align-items: flex-start;
   }
 
-  .digest-homepage__input {
-    width: 19.6875rem;
-  }
-
   .digest-homepage__button {
     padding-right: 1.5625rem;
   }
 
   .digest-homepage__button {
     padding-left: 1.5625rem;
-  }
-
-  .digest-homepage__button {
-    width: 19.6875rem;
   }
 
   .tabs-page-artist__title span {
@@ -4295,6 +4264,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .tabs-sign-up__text {
     font-size: 1rem;
+  }
+
+  .button_small {
+    padding-top: 0.75rem;
+  }
+
+  .button_small {
+    padding-bottom: 0.75rem;
+  }
+
+  .button_big {
+    padding-top: 0.75rem;
+  }
+
+  .button_big {
+    padding-bottom: 0.75rem;
   }
 
   .stats__title {
@@ -4871,6 +4856,54 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 1rem , 0.8005319149rem  +  0.8510638298vw , 1.375rem )) {
     .tabs-sign-up__text {
       font-size: calc(1rem + 0.375 * (100vw - 23.4375rem) / 44.0625);
+    }
+}
+
+@supports (padding-top: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_small {
+      padding-top: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_small {
+      padding-top: calc(0.75rem + 0.4375 * (100vw - 23.4375rem) / 44.0625);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_small {
+      padding-bottom: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_small {
+      padding-bottom: calc(0.75rem + 0.4375 * (100vw - 23.4375rem) / 44.0625);
+    }
+}
+
+@supports (padding-top: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_big {
+      padding-top: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_big {
+      padding-top: calc(0.75rem + 0.4375 * (100vw - 23.4375rem) / 44.0625);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_big {
+      padding-bottom: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.75rem , 0.517287234rem  +  0.9929078014vw , 1.1875rem )) {
+    .button_big {
+      padding-bottom: calc(0.75rem + 0.4375 * (100vw - 23.4375rem) / 44.0625);
     }
 }
 
@@ -6268,30 +6301,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (min-width: 52.125em) and (max-width: 73.75em) {
-@supports (padding-top: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_small {
-      padding-top: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_small {
-      padding-top: calc(0.625rem + 0.625 * (100vw - 52.125rem) / 21.625);
-    }
-}
-
-@supports (padding-bottom: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_small {
-      padding-bottom: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_small {
-      padding-bottom: calc(0.625rem + 0.625 * (100vw - 52.125rem) / 21.625);
-    }
-}
-
 @supports (padding-right: clamp( 0.9375rem , -1.3222543353rem  +  4.3352601156vw , 1.875rem )) {
     .button_small {
       padding-right: clamp( 0.9375rem , -1.3222543353rem  +  4.3352601156vw , 1.875rem );
@@ -6313,30 +6322,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (padding-left: clamp( 0.9375rem , -1.3222543353rem  +  4.3352601156vw , 1.875rem )) {
     .button_small {
       padding-left: calc(0.9375rem + 0.9375 * (100vw - 52.125rem) / 21.625);
-    }
-}
-
-@supports (padding-top: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_big {
-      padding-top: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_big {
-      padding-top: calc(0.625rem + 0.625 * (100vw - 52.125rem) / 21.625);
-    }
-}
-
-@supports (padding-bottom: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_big {
-      padding-bottom: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 0.625rem , -0.8815028902rem  +  2.8901734104vw , 1.25rem )) {
-    .button_big {
-      padding-bottom: calc(0.625rem + 0.625 * (100vw - 52.125rem) / 21.625);
     }
 }
 
@@ -6640,30 +6625,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (min-width: 52.125em) and (max-width: 65.625em) {
-@supports (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
-    .digest-homepage__input {
-      width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem );
-    }
-}
-
-@supports not (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
-    .digest-homepage__input {
-      width: calc(19.6875rem + 6.875 * (100vw - 52.125rem) / 13.5);
-    }
-}
-
-@supports (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
-    .digest-homepage__button {
-      width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem );
-    }
-}
-
-@supports not (width: clamp( 19.6875rem , -6.8576388889rem  +  50.9259259259vw , 26.5625rem )) {
-    .digest-homepage__button {
-      width: calc(19.6875rem + 6.875 * (100vw - 52.125rem) / 13.5);
-    }
-}
-
 @supports (font-size: clamp( 0.75rem , -0.2152777778rem  +  1.8518518519vw , 1rem )) {
     .tabs-page-artist__title span {
       font-size: clamp( 0.75rem , -0.2152777778rem  +  1.8518518519vw , 1rem );
