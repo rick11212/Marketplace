@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ConnectWallet</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230203123243">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="home.html" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+				<div class="header__menu menu">
+
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="marketplace.html" class="menu__link">Marketplace</a></li>
+							<li class="menu__item"><a href="rankings.html" class="menu__link">Rankings</a></li>
+							<li class="menu__item"><a href="connect.html" class="menu__link">Connect a wallet</a></li>
+						</ul>
+						<button data-popup="#sign-up" type="button" class="menu__button button button_small _icon-user">Sign Up</button>
+					</nav>
+
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+				</div>
+			</div>
+		</header>
+		<main class="page-connect">
+			<section class="page-connect__main main-page-connect">
+				<picture><source srcset="img/connect/background.webp" type="image/webp"><img class="main-page-connect__background" src="img/connect/background.png" alt="background"></picture>
+				<div class="main-page-connect__container">
+					<div class="main-page-connect__content">
+						<h1 class="main-page-connect__title">Connect wallet</h1>
+						<div class="main-page-connect__subtitle">Choose a wallet you want to connect. There are several wallet providers.</div>
+						<div class="main-page-connect__buttons">
+							<button class="main-page-connect__button button-border"><span></span>Metamask</button>
+							<button class="main-page-connect__button button-border"><span></span>Wallet Connect</button>
+							<button class="main-page-connect__button button-border"><span></span>Coinbase</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__row">
+					<div class="footer__column">
+						<a href="" class="footer__logo"><img src="img/logo.svg" alt="logo"></a>
+						<ul class="footer__list">
+							<li class="footer__item">NFT marketplace UI created with Anima for Figma.</li>
+							<li class="footer__item">Join our community</li>
+							<li class="footer__item">
+								<div class="footer__socials">
+									<a href="" class="footer__social _icon-discord"></a>
+									<a href="" class="footer__social _icon-youtube"></a>
+									<a href="" class="footer__social _icon-instagram"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title">Explore</div>
+						<ul class="footer__list">
+							<li class="footer__item"><a href="">Marketplace</a></li>
+							<li class="footer__item"><a href="">Rankings</a></li>
+							<li class="footer__item"><a href="">Connect a wallet</a></li>
+						</ul>
+					</div>
+					<div class="footer__column">
+						<div class="footer__title">Join our weekly digest</div>
+						<ul class="footer__list">
+							<li class="footer__item">Get exclusive promotions & updates straight to your inbox.</li>
+						</ul>
+						<form class="footer__form" action="#" method="get">
+							<input type="email" name="form[subscribe]" data-error="Error" placeholder="Enter your email here" class="footer__input">
+							<button type="submit" class="footer__button button button_big">Subscribe</button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<p>Ⓒ NFT Market. Use this template freely.</p>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<div id="sign-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close "><span class="_icon-plus"></span></button>
+				<div class="popup__text sign-up">
+					<div class="sign-up__body">
+						<div class="sign-up__image-ibg"><picture><source srcset="img/sign-up/01.webp" type="image/webp"><img src="img/sign-up/01.jpg" alt="picture"></picture></div>
+						<div class="sign-up__content">
+							<div data-tabs class="sign-up__tabs tabs-sign-up">
+								<nav data-tabs-titles class="tabs-sign-up__navigation">
+									<button type="button" class="tabs-sign-up__title _tab-active">Sign Up</button>
+									<button type="button" class="tabs-sign-up__title">Sign In</button>
+								</nav>
+								<div data-tabs-body class="tabs-sign-up__content">
+									<div class="tabs-sign-up__body">
+										<div class="tabs-sign-up__column">
+											<div class="tabs-sign-up__label">Create account</div>
+											<div class="tabs-sign-up__text">Welcome! enter your details and start creating, collecting and selling NFTs.</div>
+											<form class="tabs-sign-up__form" action="#" method="POST">
+												<div class="tabs-sign-up__item">
+													<label for="sign-up-i-1" class="_icon-user"></label>
+													<input id="sign-up-i-1" required type="text" name="form[sign-up]" data-error="Error" placeholder="Username" class="tabs-sign-up__input ">
+												</div>
+												<div class="tabs-sign-up__item">
+													<label for="sign-up-i-2" class="_icon-mail"></label>
+													<input id="sign-up-i-2" required type="email" name="form[sign-up]" data-error="Error" placeholder="Email Address" class="tabs-sign-up__input">
+												</div>
+												<div class="tabs-sign-up__item">
+													<label for="sign-up-i-3" class="_icon-lock"></label>
+													<input id="sign-up-i-3" required type="password" name="form[sign-up]" data-error="Error" placeholder="Password" class="tabs-sign-up__input">
+												</div>
+												<div class="tabs-sign-up__item">
+													<label for="sign-up-i-4" class="_icon-lock"></label>
+													<input id="sign-up-i-4" required type="password" name="form[sign-up]" data-error="Error" placeholder="Confirm Password" class="tabs-sign-up__input">
+												</div>
+												<button type="submit" class="tabs-sign-up__button button">Create account</button>
+											</form>
+										</div>
+									</div>
+									<div class="tabs-sign-up__body">
+										<div class="tabs-sign-up__column">
+											<div class="tabs-sign-up__label">Log in to your account</div>
+											<div class="tabs-sign-up__text">Welcome! enter your details and start creating, collecting and selling NFTs.</div>
+											<form class="tabs-sign-up__form" action="#" method="POST">
+												<div class="tabs-sign-up__item">
+													<label for="sign-up-i-1" class="_icon-user"></label>
+													<input id="sign-up-i-1" required type="text" name="form[sign-up]" data-error="Error" placeholder="Username or Email" class="tabs-sign-up__input ">
+												</div>
+												<div class="tabs-sign-up__item">
+													<label for="sign-up-i-3" class="_icon-lock"></label>
+													<input id="sign-up-i-3" required type="password" name="form[sign-up]" data-error="Error" placeholder="Password" class="tabs-sign-up__input">
+												</div>
+
+												<button type="submit" class="tabs-sign-up__button button">Login</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230203123243"></script>
+</body>
+
+</html>
